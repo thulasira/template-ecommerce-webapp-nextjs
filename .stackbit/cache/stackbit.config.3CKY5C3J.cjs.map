@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../stackbit.config.js"],
+  "sourcesContent": ["import { ContentfulContentSource } from \"@stackbit/cms-contentful\";\r\n\r\nconst config = {\r\n  stackbitVersion: \"~0.6.0\",\r\n  ssgName: \"nextjs\",\r\n  nodeVersion: \"18\",\r\n  contentSources: [\r\n    new ContentfulContentSource({\r\n      spaceId: process.env.CONTENTFUL_SPACE_ID,\r\n      environment: process.env.CONTENTFUL_ENVIRONMENT || \"master\",\r\n      previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN,\r\n      accessToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN,\r\n    }),\r\n  ],\r\n  modelExtensions: [{ name: \"page\", type: \"page\", urlPath: \"/{slug}\" }],\r\n};\r\n\r\nexport default config;"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,4BAAwC;AAExC,IAAM,SAAS;AAAA,EACb,iBAAiB;AAAA,EACjB,SAAS;AAAA,EACT,aAAa;AAAA,EACb,gBAAgB;AAAA,IACd,IAAI,8CAAwB;AAAA,MAC1B,SAAS,QAAQ,IAAI;AAAA,MACrB,aAAa,QAAQ,IAAI,0BAA0B;AAAA,MACnD,cAAc,QAAQ,IAAI;AAAA,MAC1B,aAAa,QAAQ,IAAI;AAAA,IAC3B,CAAC;AAAA,EACH;AAAA,EACA,iBAAiB,CAAC,EAAE,MAAM,QAAQ,MAAM,QAAQ,SAAS,UAAU,CAAC;AACtE;AAEA,IAAO,0BAAQ;",
+  "names": []
+}

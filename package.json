@@ -60,6 +60,8 @@
     "@graphql-codegen/cli": "2.13.12",
     "@graphql-codegen/client-preset": "1.1.4",
     "@graphql-codegen/introspection": "2.2.1",
+    "@stackbit/cms-contentful": "^0.4.55",
+    "@stackbit/types": "^1.0.0",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
