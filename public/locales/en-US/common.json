@@ -3,14 +3,15 @@
     "homepage": "Homepage",
     "logoImageAltText": "Logo",
     "aboutUs": "about us",
-    "description1": "Founded in 1984 by designer Chantelle West, we've always believed in the power of locally made goods.",
+    "description1": "Foundedd in 1984 by designer Chantelle West, we've always believed in the power of locally made goods.",
     "description2": "The quality of the craftsmanship and the local artisans we employ are what make Luxette our mission in life.",
     "poweredBy": "Powered by",
     "regionalSettings": "Regional Settings",
     "language": "Language"
   },
   "product": {
-    "trendingProducts": "Trending now",
+    "trendingProducts": "5G Mobile Phones",
+    "laptops": "Laptops",
     "relatedProducts": "You may also like",
     "addToCart": "Add to cart",
     "quantity": "Quantity"

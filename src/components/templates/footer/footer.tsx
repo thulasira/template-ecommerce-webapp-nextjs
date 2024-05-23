@@ -12,15 +12,16 @@ export const Footer = () => {
       py={{ base: 10, lg: 16 }}
       mt="auto"
       borderTop="1px"
-      borderColor={theme.f36.gray200}>
+      borderColor={theme.f36.gray200}
+    >
       <Container>
         <Text mb={8}>{t('common.aboutUs')}</Text>
         <Text>{t('common.description1')}</Text>
         <Text mb={8}>{t('common.description2')}</Text>
         <Text variant="small">
           {t('common.poweredBy')}{' '}
-          <Link href="https://contentful.com" isExternal color={theme.f36.blue500}>
-            Contentful
+          <Link href="https://elro.netlify.app/" isExternal color={theme.f36.blue500}>
+            Ecommmerce
           </Link>
         </Text>
       </Container>

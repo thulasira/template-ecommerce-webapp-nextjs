@@ -557,6 +557,7 @@ export type PageLanding = Entry & {
   heroBannerHeadline?: Maybe<Scalars['String']>;
   heroBannerHeadlineColor?: Maybe<Scalars['String']>;
   heroBannerImage?: Maybe<Asset>;
+  banner?: Maybe<Asset>;
   internalName?: Maybe<Scalars['String']>;
   linkedFrom?: Maybe<PageLandingLinkingCollections>;
   productsCollection?: Maybe<PageLandingProductsCollection>;
@@ -583,6 +584,10 @@ export type PageLandingHeroBannerImageArgs = {
   preview?: InputMaybe<Scalars['Boolean']>;
 };
 
+export type PageLandingbannerArgs = {
+  locale?: InputMaybe<Scalars['String']>;
+  preview?: InputMaybe<Scalars['Boolean']>;
+};
 
 /** To have an entry point for the app [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageLanding) */
 export type PageLandingInternalNameArgs = {
@@ -638,6 +643,7 @@ export type PageLandingFilter = {
   heroBannerHeadline_not_contains?: InputMaybe<Scalars['String']>;
   heroBannerHeadline_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
   heroBannerImage_exists?: InputMaybe<Scalars['Boolean']>;
+  banner_exists?: InputMaybe<Scalars['Boolean']>;  
   internalName?: InputMaybe<Scalars['String']>;
   internalName_contains?: InputMaybe<Scalars['String']>;
   internalName_exists?: InputMaybe<Scalars['Boolean']>;
@@ -1127,6 +1133,9 @@ export type PageLandingFieldsFragment = { __typename: 'PageLanding', internalNam
   ) | null, heroBannerImage?: (
     { __typename?: 'Asset' }
     & ImageFieldsFragment
+  )| null, banner?: (
+    { __typename?: 'Asset' }
+    & ImageFieldsFragment
   ) | null, productsCollection?: { __typename?: 'PageLandingProductsCollection', items: Array<(
       { __typename?: 'PageProduct' }
       & PageProductFieldsFragment
@@ -1293,12 +1302,16 @@ export const PageLandingFieldsFragmentDoc = gql`
   heroBannerImage {
     ...ImageFields
   }
+  banner {
+    ...ImageFields
+  }
   productsCollection(limit: 6) {
     items {
       ...PageProductFields
     }
   }
 }
+
     `;
 export const SitemapPagesFieldsFragmentDoc = gql`
     fragment sitemapPagesFields on Query {
